@@ -1,0 +1,429 @@
+{
+ "key": "playwright",
+ "startup": {
+  "connectMs": 279.065907,
+  "firstNavigateMs": 1215.532208
+ },
+ "results": [
+  {
+   "run": 1,
+   "site": "books",
+   "navigate": {
+    "ms": 968.9161899999999,
+    "chars": 381
+   },
+   "snapshot": {
+    "ms": 101.84463500000038,
+    "chars": 32716
+   },
+   "action": {
+    "ms": 857.3289130000003,
+    "chars": 429,
+    "arrivalMs": 857.3289130000003
+   },
+   "snapshotAfter": {
+    "ms": 72.78134999999975,
+    "chars": 21370
+   }
+  },
+  {
+   "run": 1,
+   "site": "hn",
+   "navigate": {
+    "ms": 1000.9920050000001,
+    "chars": 351
+   },
+   "snapshot": {
+    "ms": 170.65559399999984,
+    "chars": 48833
+   },
+   "action": {
+    "ms": 969.9326099999998,
+    "chars": 269,
+    "arrivalMs": 969.9326099999998
+   },
+   "snapshotAfter": {
+    "ms": 189.94872599999962,
+    "chars": 57226
+   }
+  },
+  {
+   "run": 1,
+   "site": "wiki-article",
+   "navigate": {
+    "ms": 2462.076018999999,
+    "chars": 346
+   },
+   "snapshot": {
+    "ms": 1677.4118559999988,
+    "chars": 830209
+   },
+   "action": {
+    "ms": 2103.2479780000012,
+    "chars": 373,
+    "arrivalMs": 2103.2479780000012
+   },
+   "snapshotAfter": {
+    "ms": 394.21393100000023,
+    "chars": 149089
+   }
+  },
+  {
+   "run": 1,
+   "site": "wiki-search",
+   "navigate": {
+    "ms": 495.3470980000002,
+    "chars": 363
+   },
+   "snapshot": {
+    "ms": 251.32730700000138,
+    "chars": 67204
+   },
+   "action": {
+    "ms": 1344.8807190000007,
+    "chars": 477,
+    "arrivalMs": 1344.8807190000007
+   },
+   "snapshotAfter": {
+    "ms": 421.0596509999996,
+    "chars": 149089
+   }
+  },
+  {
+   "run": 2,
+   "site": "books",
+   "navigate": {
+    "ms": 220.3459039999998,
+    "chars": 379
+   },
+   "snapshot": {
+    "ms": 103.99311699999998,
+    "chars": 32715
+   },
+   "action": {
+    "ms": 727.2276620000011,
+    "chars": 427,
+    "arrivalMs": 727.2276620000011
+   },
+   "snapshotAfter": {
+    "ms": 68.50079600000026,
+    "chars": 21683
+   }
+  },
+  {
+   "run": 2,
+   "site": "hn",
+   "navigate": {
+    "ms": 407.8248939999994,
+    "chars": 233
+   },
+   "snapshot": {
+    "ms": 158.5091969999994,
+    "chars": 49416
+   },
+   "action": {
+    "ms": 980.6235510000006,
+    "chars": 387,
+    "arrivalMs": 980.6235510000006
+   },
+   "snapshotAfter": {
+    "ms": 174.7234669999998,
+    "chars": 57901
+   }
+  },
+  {
+   "run": 2,
+   "site": "wiki-article",
+   "navigate": {
+    "ms": 2053.680679000001,
+    "chars": 257
+   },
+   "snapshot": {
+    "ms": 1707.3729280000007,
+    "chars": 835287
+   },
+   "action": {
+    "ms": 2072.7554170000003,
+    "chars": 390,
+    "arrivalMs": 2072.7554170000003
+   },
+   "snapshotAfter": {
+    "ms": 397.5593659999977,
+    "chars": 150323
+   }
+  },
+  {
+   "run": 2,
+   "site": "wiki-search",
+   "navigate": {
+    "ms": 393.55009399999835,
+    "chars": 363
+   },
+   "snapshot": {
+    "ms": 238.59389400000146,
+    "chars": 67749
+   },
+   "action": {
+    "ms": 1256.6689860000006,
+    "chars": 496,
+    "arrivalMs": 1256.6689860000006
+   },
+   "snapshotAfter": {
+    "ms": 388.94135599999936,
+    "chars": 150323
+   }
+  },
+  {
+   "run": 3,
+   "site": "books",
+   "navigate": {
+    "ms": 178.59882700000162,
+    "chars": 379
+   },
+   "snapshot": {
+    "ms": 91.10096300000077,
+    "chars": 33184
+   },
+   "action": {
+    "ms": 715.6852309999995,
+    "chars": 427,
+    "arrivalMs": 715.6852309999995
+   },
+   "snapshotAfter": {
+    "ms": 62.8348470000019,
+    "chars": 21683
+   }
+  },
+  {
+   "run": 3,
+   "site": "hn",
+   "navigate": {
+    "ms": 385.4443790000005,
+    "chars": 351
+   },
+   "snapshot": {
+    "ms": 151.78999599999952,
+    "chars": 49452
+   },
+   "action": {
+    "ms": 951.4152259999973,
+    "chars": 387,
+    "arrivalMs": 951.4152259999973
+   },
+   "snapshotAfter": {
+    "ms": 174.05062899999757,
+    "chars": 57901
+   }
+  },
+  {
+   "run": 3,
+   "site": "wiki-article",
+   "navigate": {
+    "ms": 2105.6895609999992,
+    "chars": 276
+   },
+   "snapshot": {
+    "ms": 1687.8999939999994,
+    "chars": 835306
+   },
+   "action": {
+    "ms": 2122.791900000004,
+    "chars": 390,
+    "arrivalMs": 2122.791900000004
+   },
+   "snapshotAfter": {
+    "ms": 395.38646300000255,
+    "chars": 150323
+   }
+  },
+  {
+   "run": 3,
+   "site": "wiki-search",
+   "navigate": {
+    "ms": 388.07534699999815,
+    "chars": 382
+   },
+   "snapshot": {
+    "ms": 253.882153999999,
+    "chars": 65460
+   },
+   "action": {
+    "ms": 1439.403965999998,
+    "chars": 496,
+    "arrivalMs": 1439.403965999998
+   },
+   "snapshotAfter": {
+    "ms": 383.1281949999975,
+    "chars": 150323
+   }
+  },
+  {
+   "run": 4,
+   "site": "books",
+   "navigate": {
+    "ms": 175.5523050000047,
+    "chars": 379
+   },
+   "snapshot": {
+    "ms": 107.72990600000048,
+    "chars": 33184
+   },
+   "action": {
+    "ms": 712.5708090000044,
+    "chars": 427,
+    "arrivalMs": 712.5708090000044
+   },
+   "snapshotAfter": {
+    "ms": 61.08933800000523,
+    "chars": 21683
+   }
+  },
+  {
+   "run": 4,
+   "site": "hn",
+   "navigate": {
+    "ms": 379.3923960000029,
+    "chars": 351
+   },
+   "snapshot": {
+    "ms": 153.80685799999628,
+    "chars": 49452
+   },
+   "action": {
+    "ms": 1001.935093,
+    "chars": 387,
+    "arrivalMs": 1001.935093
+   },
+   "snapshotAfter": {
+    "ms": 173.3379019999993,
+    "chars": 57752
+   }
+  },
+  {
+   "run": 4,
+   "site": "wiki-article",
+   "navigate": {
+    "ms": 2117.7620559999996,
+    "chars": 276
+   },
+   "snapshot": {
+    "ms": 1705.4094360000017,
+    "chars": 835917
+   },
+   "action": {
+    "ms": 2125.5435670000006,
+    "chars": 390,
+    "arrivalMs": 2125.5435670000006
+   },
+   "snapshotAfter": {
+    "ms": 395.8646279999957,
+    "chars": 150323
+   }
+  },
+  {
+   "run": 4,
+   "site": "wiki-search",
+   "navigate": {
+    "ms": 337.7662909999999,
+    "chars": 382
+   },
+   "snapshot": {
+    "ms": 251.80296200000157,
+    "chars": 65460
+   },
+   "action": {
+    "ms": 1277.1265889999995,
+    "chars": 496,
+    "arrivalMs": 1277.1265889999995
+   },
+   "snapshotAfter": {
+    "ms": 382.7272000000012,
+    "chars": 150323
+   }
+  },
+  {
+   "run": 5,
+   "site": "books",
+   "navigate": {
+    "ms": 185.5683990000034,
+    "chars": 379
+   },
+   "snapshot": {
+    "ms": 92.8169510000007,
+    "chars": 33184
+   },
+   "action": {
+    "ms": 691.6288189999977,
+    "chars": 427,
+    "arrivalMs": 691.6288189999977
+   },
+   "snapshotAfter": {
+    "ms": 64.27693100000033,
+    "chars": 21683
+   }
+  },
+  {
+   "run": 5,
+   "site": "hn",
+   "navigate": {
+    "ms": 605.4091779999944,
+    "chars": 233
+   },
+   "snapshot": {
+    "ms": 159.75320899999497,
+    "chars": 49420
+   },
+   "action": {
+    "ms": 996.7278680000018,
+    "chars": 387,
+    "arrivalMs": 996.7278680000018
+   },
+   "snapshotAfter": {
+    "ms": 167.32125900000392,
+    "chars": 57752
+   }
+  },
+  {
+   "run": 5,
+   "site": "wiki-article",
+   "navigate": {
+    "ms": 2071.5277419999984,
+    "chars": 276
+   },
+   "snapshot": {
+    "ms": 1708.8730209999994,
+    "chars": 835306
+   },
+   "action": {
+    "ms": 2165.4532429999963,
+    "chars": 390,
+    "arrivalMs": 2165.4532429999963
+   },
+   "snapshotAfter": {
+    "ms": 394.4453919999942,
+    "chars": 150323
+   }
+  },
+  {
+   "run": 5,
+   "site": "wiki-search",
+   "navigate": {
+    "ms": 355.1849629999997,
+    "chars": 382
+   },
+   "snapshot": {
+    "ms": 270.8586110000033,
+    "chars": 65954
+   },
+   "action": {
+    "ms": 1306.5132250000024,
+    "chars": 496,
+    "arrivalMs": 1306.5132250000024
+   },
+   "snapshotAfter": {
+    "ms": 400.2436529999977,
+    "chars": 150323
+   }
+  }
+ ]
+}

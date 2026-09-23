@@ -1,0 +1,529 @@
+{
+ "key": "mozilla-complete",
+ "startup": {
+  "connectMs": 162.65685,
+  "firstNavigateMs": 2319.837625
+ },
+ "results": [
+  {
+   "run": 1,
+   "site": "books",
+   "navigate": {
+    "ms": 993.1133239999999,
+    "chars": 56
+   },
+   "snapshot": {
+    "ms": 49.969342000000324,
+    "chars": 5569
+   },
+   "fullSnapshot": {
+    "ms": 72.20684500000016,
+    "chars": 10667
+   },
+   "action": {
+    "ms": 367.6682939999996,
+    "chars": 9,
+    "arrivalMs": 375.5287459999995
+   },
+   "snapshotAfter": {
+    "ms": 37.581303000000844,
+    "chars": 5620
+   },
+   "read": {
+    "ms": 6.246044999999867,
+    "chars": 1489
+   }
+  },
+  {
+   "run": 1,
+   "site": "hn",
+   "navigate": {
+    "ms": 787.9977790000003,
+    "chars": 58
+   },
+   "snapshot": {
+    "ms": 50.839170999999624,
+    "chars": 2923
+   },
+   "fullSnapshot": {
+    "ms": 36.28466899999967,
+    "chars": 3422
+   },
+   "error": "a \"new\" introuvable dans le snapshot (3422 caractères)"
+  },
+  {
+   "run": 1,
+   "site": "wiki-article",
+   "navigate": {
+    "ms": 373.7842379999993,
+    "chars": 66
+   },
+   "snapshot": {
+    "ms": 200.34850499999993,
+    "chars": 4107
+   },
+   "fullSnapshot": {
+    "ms": 165.17283700000007,
+    "chars": 32271
+   },
+   "action": {
+    "ms": 319.51716099999976,
+    "chars": 10,
+    "arrivalMs": 324.85877699999946
+   },
+   "snapshotAfter": {
+    "ms": 100.98915600000055,
+    "chars": 4076
+   },
+   "read": {
+    "ms": 5.647559000000001,
+    "chars": 20089
+   }
+  },
+  {
+   "run": 1,
+   "site": "wiki-search",
+   "navigate": {
+    "ms": 153.67264699999942,
+    "chars": 68
+   },
+   "snapshot": {
+    "ms": 53.847483000000466,
+    "chars": 3972
+   },
+   "fullSnapshot": {
+    "ms": 22.555555999999342,
+    "chars": 5969
+   },
+   "action": {
+    "ms": 127.2595510000001,
+    "chars": 39,
+    "arrivalMs": 290.51745800000026
+   },
+   "snapshotAfter": {
+    "ms": 110.64936699999998,
+    "chars": 3967
+   },
+   "read": {
+    "ms": 7.035163999999895,
+    "chars": 20089
+   }
+  },
+  {
+   "run": 2,
+   "site": "books",
+   "navigate": {
+    "ms": 115.77192000000014,
+    "chars": 56
+   },
+   "snapshot": {
+    "ms": 74.46739900000011,
+    "chars": 5772
+   },
+   "fullSnapshot": {
+    "ms": 77.09595600000011,
+    "chars": 11029
+   },
+   "action": {
+    "ms": 164.15070600000035,
+    "chars": 11,
+    "arrivalMs": 169.991637000001
+   },
+   "snapshotAfter": {
+    "ms": 32.083865999999944,
+    "chars": 5720
+   },
+   "read": {
+    "ms": 3.6204870000001392,
+    "chars": 1489
+   }
+  },
+  {
+   "run": 2,
+   "site": "hn",
+   "navigate": {
+    "ms": 209.2649680000004,
+    "chars": 58
+   },
+   "snapshot": {
+    "ms": 39.631014999999934,
+    "chars": 3023
+   },
+   "fullSnapshot": {
+    "ms": 28.70372000000043,
+    "chars": 3531
+   },
+   "error": "a \"new\" introuvable dans le snapshot (3531 caractères)"
+  },
+  {
+   "run": 2,
+   "site": "wiki-article",
+   "navigate": {
+    "ms": 299.85334500000044,
+    "chars": 66
+   },
+   "snapshot": {
+    "ms": 204.23445600000014,
+    "chars": 4204
+   },
+   "fullSnapshot": {
+    "ms": 210.66117199999917,
+    "chars": 32707
+   },
+   "action": {
+    "ms": 245.68392900000072,
+    "chars": 11,
+    "arrivalMs": 250.5156990000014
+   },
+   "snapshotAfter": {
+    "ms": 96.94103399999949,
+    "chars": 4076
+   },
+   "read": {
+    "ms": 7.790940999999293,
+    "chars": 20089
+   }
+  },
+  {
+   "run": 2,
+   "site": "wiki-search",
+   "navigate": {
+    "ms": 161.6919999999991,
+    "chars": 68
+   },
+   "snapshot": {
+    "ms": 67.22255200000109,
+    "chars": 3972
+   },
+   "fullSnapshot": {
+    "ms": 29.53921799999989,
+    "chars": 6087
+   },
+   "action": {
+    "ms": 148.2825100000009,
+    "chars": 39,
+    "arrivalMs": 323.9597269999995
+   },
+   "snapshotAfter": {
+    "ms": 104.58365299999969,
+    "chars": 3967
+   },
+   "read": {
+    "ms": 18.280901000000085,
+    "chars": 20089
+   }
+  },
+  {
+   "run": 3,
+   "site": "books",
+   "navigate": {
+    "ms": 131.89796899999965,
+    "chars": 56
+   },
+   "snapshot": {
+    "ms": 74.99851399999898,
+    "chars": 5772
+   },
+   "fullSnapshot": {
+    "ms": 81.51645199999984,
+    "chars": 11029
+   },
+   "action": {
+    "ms": 147.5290530000002,
+    "chars": 11,
+    "arrivalMs": 151.53426500000023
+   },
+   "snapshotAfter": {
+    "ms": 32.112686000000394,
+    "chars": 5720
+   },
+   "read": {
+    "ms": 12.638632000000143,
+    "chars": 1489
+   }
+  },
+  {
+   "run": 3,
+   "site": "hn",
+   "navigate": {
+    "ms": 222.1838029999999,
+    "chars": 58
+   },
+   "snapshot": {
+    "ms": 40.287350999999035,
+    "chars": 3023
+   },
+   "fullSnapshot": {
+    "ms": 27.17089400000077,
+    "chars": 3531
+   },
+   "error": "a \"new\" introuvable dans le snapshot (3531 caractères)"
+  },
+  {
+   "run": 3,
+   "site": "wiki-article",
+   "navigate": {
+    "ms": 193.12726900000052,
+    "chars": 66
+   },
+   "snapshot": {
+    "ms": 241.31305299999985,
+    "chars": 4204
+   },
+   "fullSnapshot": {
+    "ms": 193.97976800000106,
+    "chars": 32707
+   },
+   "action": {
+    "ms": 175.6134460000012,
+    "chars": 11,
+    "arrivalMs": 180.2637050000012
+   },
+   "snapshotAfter": {
+    "ms": 99.55673100000058,
+    "chars": 4076
+   },
+   "read": {
+    "ms": 5.935352000000421,
+    "chars": 20089
+   }
+  },
+  {
+   "run": 3,
+   "site": "wiki-search",
+   "navigate": {
+    "ms": 105.6408250000004,
+    "chars": 68
+   },
+   "snapshot": {
+    "ms": 68.2651539999988,
+    "chars": 3972
+   },
+   "fullSnapshot": {
+    "ms": 23.23814300000049,
+    "chars": 6087
+   },
+   "action": {
+    "ms": 116.44008799999938,
+    "chars": 39,
+    "arrivalMs": 270.4898580000008
+   },
+   "snapshotAfter": {
+    "ms": 124.46183100000053,
+    "chars": 3967
+   },
+   "read": {
+    "ms": 18.745985999999903,
+    "chars": 20088
+   }
+  },
+  {
+   "run": 4,
+   "site": "books",
+   "navigate": {
+    "ms": 102.00723599999947,
+    "chars": 56
+   },
+   "snapshot": {
+    "ms": 74.05910399999993,
+    "chars": 5772
+   },
+   "fullSnapshot": {
+    "ms": 67.71705800000018,
+    "chars": 11029
+   },
+   "action": {
+    "ms": 160.88029199999983,
+    "chars": 11,
+    "arrivalMs": 164.8701830000009
+   },
+   "snapshotAfter": {
+    "ms": 25.81083000000035,
+    "chars": 5720
+   },
+   "read": {
+    "ms": 3.454236999999921,
+    "chars": 1489
+   }
+  },
+  {
+   "run": 4,
+   "site": "hn",
+   "navigate": {
+    "ms": 219.87016799999947,
+    "chars": 58
+   },
+   "snapshot": {
+    "ms": 39.18199900000036,
+    "chars": 3023
+   },
+   "fullSnapshot": {
+    "ms": 24.29278400000112,
+    "chars": 3531
+   },
+   "error": "a \"new\" introuvable dans le snapshot (3531 caractères)"
+  },
+  {
+   "run": 4,
+   "site": "wiki-article",
+   "navigate": {
+    "ms": 262.2377809999998,
+    "chars": 66
+   },
+   "snapshot": {
+    "ms": 204.45423800000026,
+    "chars": 4204
+   },
+   "fullSnapshot": {
+    "ms": 177.29096400000162,
+    "chars": 32707
+   },
+   "action": {
+    "ms": 202.5025769999993,
+    "chars": 11,
+    "arrivalMs": 206.67353000000003
+   },
+   "snapshotAfter": {
+    "ms": 95.7353209999983,
+    "chars": 4076
+   },
+   "read": {
+    "ms": 6.04264300000068,
+    "chars": 20089
+   }
+  },
+  {
+   "run": 4,
+   "site": "wiki-search",
+   "navigate": {
+    "ms": 176.61393599999974,
+    "chars": 68
+   },
+   "snapshot": {
+    "ms": 54.24074599999949,
+    "chars": 3972
+   },
+   "fullSnapshot": {
+    "ms": 22.179911999999604,
+    "chars": 5969
+   },
+   "action": {
+    "ms": 140.45501800000056,
+    "chars": 39,
+    "arrivalMs": 336.70248999999967
+   },
+   "snapshotAfter": {
+    "ms": 111.25406300000031,
+    "chars": 3967
+   },
+   "read": {
+    "ms": 9.34817699999985,
+    "chars": 20088
+   }
+  },
+  {
+   "run": 5,
+   "site": "books",
+   "navigate": {
+    "ms": 109.51437500000065,
+    "chars": 56
+   },
+   "snapshot": {
+    "ms": 76.69439199999943,
+    "chars": 5772
+   },
+   "fullSnapshot": {
+    "ms": 72.89531200000056,
+    "chars": 11029
+   },
+   "action": {
+    "ms": 142.00740399999995,
+    "chars": 11,
+    "arrivalMs": 148.1769490000006
+   },
+   "snapshotAfter": {
+    "ms": 37.944516999999905,
+    "chars": 5720
+   },
+   "read": {
+    "ms": 4.041572000000087,
+    "chars": 1489
+   }
+  },
+  {
+   "run": 5,
+   "site": "hn",
+   "navigate": {
+    "ms": 366.7111240000013,
+    "chars": 58
+   },
+   "snapshot": {
+    "ms": 53.9021130000001,
+    "chars": 3023
+   },
+   "fullSnapshot": {
+    "ms": 27.749440999999933,
+    "chars": 3531
+   },
+   "error": "a \"new\" introuvable dans le snapshot (3531 caractères)"
+  },
+  {
+   "run": 5,
+   "site": "wiki-article",
+   "navigate": {
+    "ms": 163.62476099999913,
+    "chars": 66
+   },
+   "snapshot": {
+    "ms": 221.05915099999947,
+    "chars": 4207
+   },
+   "fullSnapshot": {
+    "ms": 148.6974740000005,
+    "chars": 32823
+   },
+   "action": {
+    "ms": 196.3976730000013,
+    "chars": 11,
+    "arrivalMs": 201.02333100000214
+   },
+   "snapshotAfter": {
+    "ms": 89.0365010000005,
+    "chars": 4176
+   },
+   "read": {
+    "ms": 4.550736999999572,
+    "chars": 20089
+   }
+  },
+  {
+   "run": 5,
+   "site": "wiki-search",
+   "navigate": {
+    "ms": 107.35290199999872,
+    "chars": 68
+   },
+   "snapshot": {
+    "ms": 52.41772700000001,
+    "chars": 4072
+   },
+   "fullSnapshot": {
+    "ms": 42.10710999999901,
+    "chars": 6119
+   },
+   "action": {
+    "ms": 137.93140200000016,
+    "chars": 40,
+    "arrivalMs": 294.1213150000003
+   },
+   "snapshotAfter": {
+    "ms": 110.84167799999886,
+    "chars": 4067
+   },
+   "read": {
+    "ms": 54.90138500000103,
+    "chars": 20088
+   }
+  }
+ ]
+}

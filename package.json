@@ -1,0 +1,34 @@
+{
+  "name": "firefox-jev-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server + Firefox extension: Jev picks which element to interact with, Claude Code plans.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kitoutou999/firefox-jev-mcp.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "server": "tsx server/src/index.ts",
+    "firefox": "web-ext run --source-dir extension --firefox-profile ./firefox-profile --profile-create-if-missing --keep-profile-changes --start-url about:blank",
+    "lint:ext": "web-ext lint --source-dir extension",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@typesafe-ai/sdk": "^0.6.0",
+    "ws": "^8.21.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "web-ext": "^10.7.0"
+  }
+}

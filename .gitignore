@@ -1,0 +1,7 @@
+node_modules/
+.env
+firefox-profile/
+web-ext-artifacts/
+bench/work/
+bench/charts/*.html
+.playwright-mcp/

@@ -1,0 +1,742 @@
+[
+ {
+  "date": "2026-09-23",
+  "started": "17:52:55",
+  "jev": {
+   "mcp": "firefox-jev-mcp",
+   "model": "claude-opus-5-5",
+   "success": true,
+   "total_s": 17.181,
+   "claude_api_s": 9.184,
+   "claude_turns": 5,
+   "claude_cost_usd": 0.0774724,
+   "claude_tokens": {
+    "input": 8,
+    "cache_creation": 7746,
+    "cache_read": 20062,
+    "output": 573
+   },
+   "jev": {
+    "calls": 13,
+    "input_tokens": 240386
+   },
+   "steps": [
+    {
+     "at_s": 2.736,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "reach the English Wikipedia article \"Eiffel Tower\" (e.g. via France or Paris links)",
+      "maxSteps": 8
+     },
+     "duration_s": 1.395,
+     "status": "need_decision"
+    },
+    {
+     "at_s": 6.365,
+     "tool": "browser_act",
+     "input": {
+      "ref": "e278",
+      "action": "click"
+     },
+     "duration_s": 1.3259999999999996
+    },
+    {
+     "at_s": 6.707,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "click a link to \"Eiffel Tower\" or \"Paris\" article (do not use search box)",
+      "maxSteps": 6
+     },
+     "duration_s": 3.5149999999999997,
+     "status": "done"
+    },
+    {
+     "at_s": 12.228,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "click the link to the \"Eiffel Tower\" article",
+      "maxSteps": 3
+     },
+     "duration_s": 2.3689999999999998,
+     "status": "done"
+    }
+   ],
+   "answer": "I reached the Eiffel Tower article in 3 clicks, all on links inside the pages.\n\nPages visited:\n1. Titanic\n2. Palace of Versailles\n3. Paris\n4. Eiffel Tower (https://en.wikipedia.org/wiki/Eiffel_Tower)\n\nOn the first step, browse_goal's top pick was the search box, so it handed back to me. I clicked \"Palace of Versailles\" myself, and browse_goal made the other two clicks."
+  },
+  "moz": {
+   "mcp": "@mozilla/firefox-devtools-mcp",
+   "model": "claude-opus-5-5",
+   "success": true,
+   "total_s": 23.534,
+   "claude_api_s": 18.46,
+   "claude_turns": 11,
+   "claude_cost_usd": 0.12371539999999999,
+   "claude_tokens": {
+    "input": 16,
+    "cache_creation": 10798,
+    "cache_read": 67037,
+    "output": 1193
+   },
+   "jev": {
+    "calls": 0,
+    "input_tokens": 0
+   },
+   "steps": [
+    {
+     "at_s": 3.707,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href=\"/wiki/Paris\"], a[href=\"/wiki/France\"]",
+      "maxLines": 5
+     },
+     "duration_s": 3.4859999999999998,
+     "error": true
+    },
+    {
+     "at_s": 9.09,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href*=\"France\"], a[href*=\"Paris\"], a[href*=\"Cherbourg\"]",
+      "maxLines": 10
+     },
+     "duration_s": 0.0129999999999999
+    },
+    {
+     "at_s": 11.22,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#mw-content-text a[href*=\"Cherbourg\"]",
+      "maxLines": 5
+     },
+     "duration_s": 0.010999999999999233
+    },
+    {
+     "at_s": 13.931,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#mw-content-text a[href$=\"/wiki/France\"], #mw-content-text a[href$=\"/wiki/Paris\"]",
+      "maxLines": 5
+     },
+     "duration_s": 0.013000000000001677,
+     "error": true
+    },
+    {
+     "at_s": 15.808,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e4"
+     },
+     "duration_s": 1.0100000000000016
+    },
+    {
+     "at_s": 16.128,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#mw-content-text a[href$=\"/wiki/Paris\"]",
+      "maxLines": 5
+     },
+     "duration_s": 0.6980000000000004
+    },
+    {
+     "at_s": 18.942,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e5"
+     },
+     "duration_s": 0.31899999999999906
+    },
+    {
+     "at_s": 19.363,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#mw-content-text a[href$=\"/wiki/Eiffel_Tower\"]",
+      "maxLines": 5
+     },
+     "duration_s": 0.03300000000000125
+    },
+    {
+     "at_s": 21.136,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e6"
+     },
+     "duration_s": 0.3620000000000019
+    },
+    {
+     "at_s": 21.205,
+     "tool": "list_pages",
+     "input": {},
+     "duration_s": 0.30200000000000315
+    }
+   ],
+   "answer": "I reached the Eiffel Tower article in 3 clicks. The open tab now shows \"Eiffel Tower - Wikipedia\".\n\nPages visited:\n1. Titanic (start)\n2. Cherbourg\n3. Paris\n4. Eiffel Tower\n\nI only clicked links inside the article text. I never used a search box, typed text, entered a URL or went back."
+  }
+ },
+ {
+  "date": "2026-09-23",
+  "started": "17:53:49",
+  "jev": {
+   "mcp": "firefox-jev-mcp",
+   "model": "claude-opus-5-5",
+   "success": true,
+   "total_s": 19.216,
+   "claude_api_s": 11.389,
+   "claude_turns": 6,
+   "claude_cost_usd": 0.03702,
+   "claude_tokens": {
+    "input": 10,
+    "cache_creation": 2039,
+    "cache_read": 31840,
+    "output": 715
+   },
+   "jev": {
+    "calls": 14,
+    "input_tokens": 230208
+   },
+   "steps": [
+    {
+     "at_s": 2.89,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "reach the English Wikipedia article \"Eiffel Tower\" (e.g. via France or Paris links)",
+      "maxSteps": 8
+     },
+     "duration_s": 0.017999999999999794,
+     "status": "error"
+    },
+    {
+     "at_s": 4.154,
+     "tool": "browser_status",
+     "input": {},
+     "duration_s": 0.009000000000000341
+    },
+    {
+     "at_s": 6.156,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "reach the English Wikipedia article \"Eiffel Tower\" (e.g. via France or Paris links)",
+      "maxSteps": 8
+     },
+     "duration_s": 1.38,
+     "status": "need_decision"
+    },
+    {
+     "at_s": 9.66,
+     "tool": "browser_act",
+     "input": {
+      "ref": "e430",
+      "action": "click"
+     },
+     "duration_s": 0.718
+    },
+    {
+     "at_s": 10.464,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "click a link to Paris or France, then reach the English Wikipedia article \"Eiffel Tower\"; do not use search",
+      "maxSteps": 6
+     },
+     "duration_s": 5.712999999999999,
+     "status": "done"
+    }
+   ],
+   "answer": "I reached the Eiffel Tower article (https://en.wikipedia.org/wiki/Eiffel_Tower) in 4 clicks, using only links inside the pages.\n\nPages visited:\n1. Titanic\n2. Cherbourg\n3. France\n4. Paris\n5. Eiffel Tower\n\nMy first `browse_goal` call failed because the Firefox extension wasn't connected yet. It was connected when I checked a moment later, so I ran it again. On the second try, `browse_goal` stopped on the Titanic page because its top choice was the search box, which the rules forbid. I clicked the Cherbourg link myself. From there it went through France and Paris to the Eiffel Tower page on its own."
+  },
+  "moz": {
+   "mcp": "@mozilla/firefox-devtools-mcp",
+   "model": "claude-opus-5-5",
+   "success": true,
+   "total_s": 20.153,
+   "claude_api_s": 16.22,
+   "claude_turns": 11,
+   "claude_cost_usd": 0.049555800000000004,
+   "claude_tokens": {
+    "input": 16,
+    "cache_creation": 1830,
+    "cache_read": 74859,
+    "output": 994
+   },
+   "jev": {
+    "calls": 0,
+    "input_tokens": 0
+   },
+   "steps": [
+    {
+     "at_s": 3.618,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#mw-content-text a[href=\"/wiki/France\"]"
+     },
+     "duration_s": 2.8620000000000005,
+     "error": true
+    },
+    {
+     "at_s": 8.291,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href=\"/wiki/Cherbourg-Octeville\"], a[href=\"/wiki/Cherbourg\"], a[href=\"/wiki/Paris\"]"
+     },
+     "duration_s": 0.013999999999999346,
+     "error": true
+    },
+    {
+     "at_s": 9.901,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href*=\"Cherbourg\"]"
+     },
+     "duration_s": 0.0129999999999999
+    },
+    {
+     "at_s": 11.975,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href$=\"/wiki/Paris\"]"
+     },
+     "duration_s": 0.011000000000001009,
+     "error": true
+    },
+    {
+     "at_s": 13.635,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e0"
+     },
+     "duration_s": 0.3390000000000004
+    },
+    {
+     "at_s": 13.967,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href$=\"/wiki/Paris\"]"
+     },
+     "duration_s": 0.07599999999999874
+    },
+    {
+     "at_s": 15.943,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e1"
+     },
+     "duration_s": 0.46500000000000163
+    },
+    {
+     "at_s": 16.275,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href$=\"/wiki/Eiffel_Tower\"]"
+     },
+     "duration_s": 0.15800000000000125
+    },
+    {
+     "at_s": 18.01,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e2"
+     },
+     "duration_s": 0.3549999999999969
+    },
+    {
+     "at_s": 18.074,
+     "tool": "list_pages",
+     "input": {},
+     "duration_s": 0.3009999999999984
+    }
+   ],
+   "answer": "I reached the Eiffel Tower article in 3 clicks, using only links inside the pages. The browser tab now shows \"Eiffel Tower - Wikipedia\".\n\nPages visited:\n1. Titanic\n2. Cherbourg\n3. Paris\n4. Eiffel Tower"
+  }
+ },
+ {
+  "date": "2026-09-23",
+  "started": "18:05:00",
+  "jev": {
+   "mcp": "firefox-jev-mcp",
+   "model": "claude-opus-5-5",
+   "success": true,
+   "total_s": 22.718,
+   "claude_api_s": 17.227,
+   "claude_turns": 9,
+   "claude_cost_usd": 0.0554542,
+   "claude_tokens": {
+    "input": 14,
+    "cache_creation": 2742,
+    "cache_read": 48811,
+    "output": 1185
+   },
+   "jev": {
+    "calls": 9,
+    "input_tokens": 177781
+   },
+   "steps": [
+    {
+     "at_s": 2.942,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "reach the English Wikipedia article \"Eiffel Tower\" (e.g. via France or Paris links)",
+      "maxSteps": 8
+     },
+     "duration_s": 0.0129999999999999,
+     "status": "error"
+    },
+    {
+     "at_s": 4.162,
+     "tool": "browser_status",
+     "input": {},
+     "duration_s": 0.009999999999999787
+    },
+    {
+     "at_s": 6.264,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "reach the English Wikipedia article \"Eiffel Tower\" (e.g. via France or Paris links)",
+      "maxSteps": 8
+     },
+     "duration_s": 1.428,
+     "status": "need_decision"
+    },
+    {
+     "at_s": 9.93,
+     "tool": "browser_act",
+     "input": {
+      "ref": "e430",
+      "action": "click"
+     },
+     "duration_s": 0.1769999999999996
+    },
+    {
+     "at_s": 10.777,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "click the link to \"France\" or \"Paris\" or \"Eiffel Tower\" article",
+      "maxSteps": 1,
+      "minConfidence": 0.3,
+      "verifyThreshold": 0.3
+     },
+     "duration_s": 1.232000000000001,
+     "status": "max_steps"
+    },
+    {
+     "at_s": 14.263,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "click the link to the \"Eiffel Tower\" article",
+      "maxSteps": 3,
+      "minConfidence": 0.3,
+      "verifyThreshold": 0.3
+     },
+     "duration_s": 0.9760000000000009,
+     "status": "need_decision"
+    },
+    {
+     "at_s": 17.28,
+     "tool": "browser_act",
+     "input": {
+      "ref": "e56",
+      "action": "click"
+     },
+     "duration_s": 0.20599999999999952
+    },
+    {
+     "at_s": 17.999,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "click the link to the \"Eiffel Tower\" article",
+      "maxSteps": 1,
+      "minConfidence": 0.3,
+      "verifyThreshold": 0.3
+     },
+     "duration_s": 1.086000000000002,
+     "status": "max_steps"
+    }
+   ],
+   "answer": "I reached the English Wikipedia \"Eiffel Tower\" article in 4 clicks, all on links inside the pages. I didn't search, type text, open a URL or go back.\n\nPages visited:\n1. Titanic (start)\n2. Cherbourg\n3. France\n4. Paris\n5. Eiffel Tower\n\n- **Titanic:** browse_goal handed back to me. Its top pick was the Main Page link, but I clicked Cherbourg myself.\n- **France:** browse_goal found no direct link to the Eiffel Tower, so I clicked Paris myself.\n- **Cherbourg and Paris:** browse_goal clicked the France and Eiffel Tower links on its own.\n\nThe first browse_goal call failed because the extension wasn't connected. It was connected when I checked the status, and the retry worked."
+  },
+  "moz": {
+   "mcp": "@mozilla/firefox-devtools-mcp",
+   "model": "claude-opus-5-5",
+   "success": true,
+   "total_s": 27.823,
+   "claude_api_s": 23.88,
+   "claude_turns": 13,
+   "claude_cost_usd": 0.0658562,
+   "claude_tokens": {
+    "input": 20,
+    "cache_creation": 2393,
+    "cache_read": 96061,
+    "output": 1371
+   },
+   "jev": {
+    "calls": 0,
+    "input_tokens": 0
+   },
+   "steps": [
+    {
+     "at_s": 3.763,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href=\"/wiki/Paris\"], a[href=\"/wiki/France\"]"
+     },
+     "duration_s": 2.883,
+     "error": true
+    },
+    {
+     "at_s": 8.669,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href=\"/wiki/Cherbourg-Octeville\"], a[href=\"/wiki/Cherbourg\"]"
+     },
+     "duration_s": 0.014999999999998792,
+     "error": true
+    },
+    {
+     "at_s": 10.439,
+     "tool": "list_pages",
+     "input": {},
+     "duration_s": 0.019000000000000128
+    },
+    {
+     "at_s": 12.425,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href*=\"Cherbourg\"], a[href*=\"France\"], a[href*=\"Paris\"]"
+     },
+     "duration_s": 0.0129999999999999
+    },
+    {
+     "at_s": 16.011,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#bodyContent a[title^=\"Cherbourg\"]"
+     },
+     "duration_s": 0.013000000000001677
+    },
+    {
+     "at_s": 18.071,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#bodyContent a[title=\"France\"]"
+     },
+     "duration_s": 0.00999999999999801,
+     "error": true
+    },
+    {
+     "at_s": 20.093,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e4"
+     },
+     "duration_s": 0.43599999999999994
+    },
+    {
+     "at_s": 20.355,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#bodyContent a[title=\"Paris\"]"
+     },
+     "duration_s": 0.1999999999999993
+    },
+    {
+     "at_s": 22.449,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e5"
+     },
+     "duration_s": 0.31899999999999906
+    },
+    {
+     "at_s": 22.755,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#bodyContent a[title=\"Eiffel Tower\"]"
+     },
+     "duration_s": 0.11400000000000077
+    },
+    {
+     "at_s": 25.084,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e6"
+     },
+     "duration_s": 0.2699999999999996
+    },
+    {
+     "at_s": 25.208,
+     "tool": "list_pages",
+     "input": {},
+     "duration_s": 0.15399999999999991
+    }
+   ],
+   "answer": "I reached the Eiffel Tower article in 3 clicks. The current tab is https://en.wikipedia.org/wiki/Eiffel_Tower.\n\nPages visited:\n1. Titanic\n2. Cherbourg\n3. Paris\n4. Eiffel Tower\n\nI only clicked links inside the articles: no search box, no typing, no URLs and no back navigation."
+  }
+ },
+ {
+  "date": "2026-09-23",
+  "started": "18:13:46",
+  "jev": {
+   "mcp": "firefox-jev-mcp",
+   "model": "claude-opus-5-5",
+   "success": true,
+   "total_s": 14.714,
+   "claude_api_s": 7.929,
+   "claude_turns": 4,
+   "claude_cost_usd": 0.027664599999999998,
+   "claude_tokens": {
+    "input": 6,
+    "cache_creation": 1612,
+    "cache_read": 18623,
+    "output": 551
+   },
+   "jev": {
+    "calls": 14,
+    "input_tokens": 230704
+   },
+   "steps": [
+    {
+     "at_s": 2.846,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "reach the Wikipedia article \"Eiffel Tower\" (e.g. via France, Paris links)",
+      "maxSteps": 10
+     },
+     "duration_s": 1.4239999999999995,
+     "status": "need_decision"
+    },
+    {
+     "at_s": 6.631,
+     "tool": "browser_act",
+     "input": {
+      "ref": "e430",
+      "action": "click"
+     },
+     "duration_s": 0.18799999999999972
+    },
+    {
+     "at_s": 7.42,
+     "tool": "browse_goal",
+     "input": {
+      "goal": "click the link to \"Paris\" or \"France\" to eventually reach the \"Eiffel Tower\" article",
+      "maxSteps": 8,
+      "minConfidence": 0.4
+     },
+     "duration_s": 4.6419999999999995,
+     "status": "done"
+    }
+   ],
+   "answer": "I reached the Eiffel Tower article in 4 clicks, all on links inside the pages. The browser's current address is https://en.wikipedia.org/wiki/Eiffel_Tower.\n\nPages visited:\n1. Titanic (starting page)\n2. Cherbourg: I clicked this one myself because browse_goal handed back to me on the first page.\n3. France: chosen by browse_goal.\n4. Paris: chosen by browse_goal.\n5. Eiffel Tower"
+  },
+  "moz": {
+   "mcp": "@mozilla/firefox-devtools-mcp",
+   "model": "claude-opus-5-5",
+   "success": true,
+   "total_s": 23.404,
+   "claude_api_s": 19.12,
+   "claude_turns": 12,
+   "claude_cost_usd": 0.056593,
+   "claude_tokens": {
+    "input": 18,
+    "cache_creation": 2102,
+    "cache_read": 85225,
+    "output": 1133
+   },
+   "jev": {
+    "calls": 0,
+    "input_tokens": 0
+   },
+   "steps": [
+    {
+     "at_s": 3.536,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#mw-content-text a[href=\"/wiki/France\"], #mw-content-text a[href=\"/wiki/Paris\"]",
+      "maxLines": 10
+     },
+     "duration_s": 2.9179999999999997,
+     "error": true
+    },
+    {
+     "at_s": 8.502,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href=\"/wiki/Cherbourg-Octeville\"], a[href=\"/wiki/Cherbourg\"]",
+      "maxLines": 10
+     },
+     "duration_s": 0.014999999999998792,
+     "error": true
+    },
+    {
+     "at_s": 10.108,
+     "tool": "list_pages",
+     "input": {},
+     "duration_s": 0.014999999999998792
+    },
+    {
+     "at_s": 11.969,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "a[href*=\"France\"]",
+      "maxLines": 10
+     },
+     "duration_s": 0.016000000000000014
+    },
+    {
+     "at_s": 14.55,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#bodyContent a[title^=\"Cherbourg\"]",
+      "maxLines": 10
+     },
+     "duration_s": 0.010999999999999233
+    },
+    {
+     "at_s": 16.492,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e4"
+     },
+     "duration_s": 0.5009999999999977
+    },
+    {
+     "at_s": 16.817,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#bodyContent a[title=\"Paris\"]",
+      "maxLines": 5
+     },
+     "duration_s": 0.23600000000000065
+    },
+    {
+     "at_s": 18.955,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e5"
+     },
+     "duration_s": 0.48200000000000287
+    },
+    {
+     "at_s": 19.279,
+     "tool": "take_snapshot",
+     "input": {
+      "selector": "#bodyContent a[title=\"Eiffel Tower\"]",
+      "maxLines": 5
+     },
+     "duration_s": 0.16799999999999926
+    },
+    {
+     "at_s": 21.012,
+     "tool": "click_by_uid",
+     "input": {
+      "uid": "e6"
+     },
+     "duration_s": 0.3719999999999999
+    },
+    {
+     "at_s": 21.092,
+     "tool": "list_pages",
+     "input": {},
+     "duration_s": 0.3019999999999996
+    }
+   ],
+   "answer": "I reached the Eiffel Tower article in 3 clicks, using only links inside the pages. The open tab is now https://en.wikipedia.org/wiki/Eiffel_Tower.\n\nPages visited:\n1. Titanic (starting page)\n2. Cherbourg\n3. Paris\n4. Eiffel Tower"
+  }
+ }
+]

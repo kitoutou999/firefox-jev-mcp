@@ -1,0 +1,12 @@
+{
+  "name": "firefox-mcp-bench",
+  "private": true,
+  "type": "module",
+  "description": "Banc de mesure : latence et taille des observations de plusieurs serveurs MCP Firefox",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@mozilla/firefox-devtools-mcp": "^0.10.4",
+    "@playwright/mcp": "^0.0.82",
+    "chrome-devtools-mcp": "^1.10.1"
+  }
+}

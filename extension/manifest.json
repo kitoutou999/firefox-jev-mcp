@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Jev Browser Bridge",
+  "version": "0.1.0",
+  "description": "Relie Firefox au serveur MCP local firefox-jev-mcp : extraction des éléments interactifs et exécution des actions.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "jev-bridge@firefox-jev-mcp.local",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": ["websiteContent", "browsingActivity"]
+      }
+    }
+  },
+  "permissions": ["tabs", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "Jev Bridge"
+  }
+}

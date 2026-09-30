@@ -5,3 +5,4 @@ web-ext-artifacts/
 bench/work/
 bench/charts/*.html
 .playwright-mcp/
+extension/.amo-upload-uuid

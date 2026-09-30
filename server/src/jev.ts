@@ -84,6 +84,8 @@ export function describe(el: PageElement): string {
   if (el.href) parts.push(`to ${el.href}`);
   if (el.section) parts.push(`under "${el.section}"`);
   if (el.zone) parts.push(`in ${el.zone}`);
+  if (el.frame) parts.push(`in frame "${el.frame}"`);
+  if (el.upload) parts.push("file upload");
   if (el.checked !== undefined) parts.push(el.checked ? "checked" : "unchecked");
   if (el.popup) parts.push(`opens a ${el.popup}`);
   if (el.expanded !== undefined) parts.push(el.expanded ? "expanded" : "collapsed");
@@ -148,8 +150,10 @@ function criteriaFor(options: Option[]): ChoiceCriteria {
   return criteria;
 }
 
+// Une combobox sans options n'est un champ texte que si c'est un <input> (autocomplétion) : sinon c'est une liste
+// dessinée par la page, encore fermée, qu'un clic ouvre.
 export const isTextField = (el: PageElement): boolean =>
-  el.role === "textbox" || el.role === "searchbox" || (el.role === "combobox" && !el.options);
+  el.role === "textbox" || el.role === "searchbox" || (el.role === "combobox" && !el.options && el.type !== undefined);
 
 export const isSearchField = (el: PageElement): boolean => isTextField(el) && (el.search === true || el.role === "searchbox");
 

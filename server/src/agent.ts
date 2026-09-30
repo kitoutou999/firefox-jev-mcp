@@ -1,6 +1,6 @@
 import type { Bridge } from "./bridge.js";
 import { actionText, addUsage, chooseOption, decide, describe, isSearchField, isTextField, round, type Arrival, type Candidate, type JevUsage } from "./jev.js";
-import { tabInfo, type ActAction, type ActResult, type PageElement, type Snapshot, type TabInfo } from "./types.js";
+import { pdfHint, tabInfo, type ActAction, type ActResult, type PageElement, type Snapshot, type TabInfo } from "./types.js";
 
 export interface BrowseOptions {
   goal: string;
@@ -103,6 +103,8 @@ async function loop(bridge: Bridge, opts: BrowseOptions, progress: Progress): Pr
     // On reste sur le même onglet même si l'utilisateur change de focus entre deux étapes.
     tabId = snap.tabId;
     progress.page = tabInfo(snap);
+    // Un document ouvert (relevé, facture) est le plus souvent l'objectif : Claude le lit ou l'enregistre.
+    if (snap.pdf) return finish("done", pdfHint(snap.pdf));
     if (arrival) {
       const after = snap.elements.find((e) => usedKey(snap.url, e) === lastKey);
       arrival.result = after && describe(after);
@@ -159,6 +161,9 @@ async function loop(bridge: Bridge, opts: BrowseOptions, progress: Progress): Pr
     let done = actionText(el, description, pendingText);
     let stepTarget = target;
     let act: { action: ActAction; text?: string; submit?: boolean };
+    if (el.upload) {
+      return handBack(`Jev veut déposer un fichier (${target}) : utiliser browser_upload`);
+    }
     if (isTextField(el)) {
       if (pendingText === undefined) {
         return handBack(`Jev veut remplir un champ (${target}) : fournir typeText ou utiliser browser_act`);

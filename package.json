@@ -15,6 +15,7 @@
   "scripts": {
     "server": "tsx server/src/index.ts",
     "firefox": "web-ext run --source-dir extension --firefox-profile ./firefox-profile --profile-create-if-missing --keep-profile-changes --start-url about:blank",
+    "sign": "node --env-file=.env node_modules/web-ext/bin/web-ext.js sign --source-dir extension --channel unlisted --artifacts-dir web-ext-artifacts",
     "lint:ext": "web-ext lint --source-dir extension",
     "typecheck": "tsc --noEmit"
   },
